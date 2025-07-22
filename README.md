@@ -7,23 +7,51 @@
 
 ## Table of Contents
 - [Features](#features)
+- [API Documentation](#api-documentation)
+- [Benchmarks](#benchmarks)
+
+# BitMathUtils - Bitwise and Mathematical Utilities Library
+
+![C++](https://img.shields.io/badge/C++-17-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Platform](https://img.shields.io/badge/Platform-Cross--Platform-lightgrey.svg)
+![Build](https://img.shields.io/badge/Build-CMake-success.svg)
+
+A collection of low-level mathematical operations and bit manipulation utilities implemented in C++ without relying on standard library math functions.
+
+## Table of Contents
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
-- [Benchmarks](#benchmarks)
 - [Examples](#examples)
+- [Benchmarks](#benchmarks)
 - [Limitations](#limitations)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Features
-[... previous features content ...]
 
-## Installation
-[... previous installation content ...]
+### Core Mathematical Operations
+- **📊 Custom Power Functions**  
+  `ast()` for both integer and floating-point exponents
+- **📈 Logarithmic Functions**  
+  Natural log (`ln()`) and arbitrary base log (`log()`)
+- **√ Square Root**  
+  Babylonian method implementation (`armat()`)
+- **🧮 Bitwise Arithmetic**  
+  Addition, multiplication, and exponentiation using only bit operations
 
-## Usage
-[... previous usage content ...]
+### Bit Manipulation Utilities
+- **🔀 Bit Swapping**  
+  Swap individual bits in integers (`swap1()`)
+- **🔄 Bit Reversal**  
+  Reverse bit sequences within ranges (`revers()`)
+- **⚡ Power Checks**  
+  Efficient power-of-4 verification (`powOf4()`)
+- **➕ Bitwise Addition**  
+  Full adder implementation (`sum_of_bit()`)
+
 
 ## API Documentation
 
@@ -57,15 +85,3 @@ Tested on Intel Core i7-1185G7 @ 3.00GHz (gcc 11.3)
 | `ln()` | 1.0 < a < 2.0 | 12,000 | 8.5x slower | Fixed 1000 iterations |
 | `sum_of_bit()` | 32-bit ints | 18 | 6.0x slower | Full adder implementation |
 | `revers()` | 32-bit number | 48 | 4.1x slower | Mid-range reversal (bits 8-24) |
-
-## Examples
-[... previous examples content ...]
-
-## Limitations
-[... previous limitations content ...]
-
-## Contributing
-[... previous contributing content ...]
-
-## License
-[... previous license content ...]
